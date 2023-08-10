@@ -60,8 +60,8 @@ def initialize():
     # username = ""
     # password = """"""
 
-    username = "hannahdenaudis"
-    password = """sifre.09aa"""
+    username = ""
+    password = """"""
 
     driver.implicitly_wait(10)
     return db, session, driver, username, password
