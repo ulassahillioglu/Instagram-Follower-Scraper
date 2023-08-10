@@ -193,6 +193,7 @@ def collect_followers(username):
 
 def filter_followers(usernames):
     # username_input = input("Enter username: ")
+    account_number = input("Enter how many accounts do you wish to scrape: \n500-1000 recommended\n")
     for index, username in enumerate(usernames):
         print(f"Profil no: {index+1} {username}")
         profile_link = f"https://www.instagram.com/{username}"
@@ -238,7 +239,12 @@ def filter_followers(usernames):
                     )
         
                    
-
+        if index % 100 == 0:
+            time.sleep(60)
+        
+        if index == int(account_number):
+            print("Completed")
+            break
         
 
         print("***************************************************")
