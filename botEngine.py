@@ -261,7 +261,7 @@ def main(usernames):
     for username in usernames:
         filter_followers(username)
     driver.quit()
-    db.removeDuplicatesByUserName("table_name")
+    db.removeDuplicatesByUserName(table_name)
 
 
 
